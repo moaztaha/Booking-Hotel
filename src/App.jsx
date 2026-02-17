@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Hotels from "./pages/Hotels";
 import RoomDetails from "./pages/RoomDetails";
+import Footer from "./components/Footer";
 
 function App() {
   const isDashboard = useLocation().pathname.includes("/dashboard");
@@ -16,6 +17,7 @@ function App() {
           <Route path="/rooms/:id" element={<RoomDetails />} />
         </Routes>
       </div>
+      <Footer/>
     </>
   );
 }
